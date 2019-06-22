@@ -18,8 +18,19 @@ button, input, select {
 .container {
   width: 1140px; }
 
+.fontB {
+  font-weight: bold; }
+
 .btn {
   cursor: pointer; }
+  .btn.btn-primary {
+    background-color: #905b41;
+    border-color: #905b41;
+    color: #fff; }
+  .btn.is-round {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; }
 
 .textI2 {
   text-indent: 2em; }
@@ -2284,5 +2295,44 @@ button, input, select {
 .aboutHonor {
   font-size: 25px;
   line-height: 50px; }
+
+.login {
+  width: 100%;
+  background-image: url(../images/login_02.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 785px; }
+  .login .loginBox {
+    width: 395px;
+    height: 435px;
+    background-image: url(../images/login_01.png);
+    background-repeat: no-repeat;
+    padding: 15px 37px 0 37px;
+    margin: 17% -15px 0 auto; }
+    .login .loginBox .form-group {
+      margin-bottom: 40px; }
+      .login .loginBox .form-group input {
+        height: 50px;
+        padding: 12px 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px; }
+      .login .loginBox .form-group .btn.is-round {
+        letter-spacing: 30px;
+        font-size: 25px;
+        height: 50px;
+        line-height: 1;
+        text-indent: 30px; }
+      .login .loginBox .form-group.form-code {
+        position: relative; }
+        .login .loginBox .form-group.form-code input {
+          padding-right: 115px; }
+        .login .loginBox .form-group.form-code button {
+          position: absolute;
+          right: 20px;
+          top: 7px;
+          z-index: 20; }
 
 /*# sourceMappingURL=main.css.map */

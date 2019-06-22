@@ -27,11 +27,16 @@ button, input, select {
 }
 
 .container {width: 1140px;}
-
-.btn {cursor: pointer;}
-.textI2{text-indent: 2em;}
-.font25{font-size: 25px;}
-.font35{font-size: 35px;}
+.fontB {font-weight: bold;}
+.btn {cursor: pointer;
+	&.btn-primary {
+		background-color: #905b41;border-color: #905b41;color: #fff;
+	}
+	&.is-round {-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;}
+}
+.textI2 {text-indent: 2em;}
+.font25 {font-size: 25px;}
+.font35 {font-size: 35px;}
 @for $i from 1 through 40 {
 	.blk#{$i * 5} {
 		font-size: 0;line-height: 0;clear: both;overflow: hidden;
@@ -129,14 +134,14 @@ button, input, select {
 	}
 }
 
-.kefu{
-	background: #f9f7f5;width: 300px;position: fixed;top: 35%;right:10px;z-index: 9999;padding: 25px 50px;box-shadow:0 0 5px #ccc;
-	& .btn{
+.kefu {
+	background: #f9f7f5;width: 300px;position: fixed;top: 35%;right: 10px;z-index: 9999;padding: 25px 50px;box-shadow: 0 0 5px #ccc;
+	& .btn {
 		height: 55px;padding: 0;line-height: 55px;background-color: #905b41;border-color: #905b41;color: #fff;font-size: 20px;
-		&.is-plain{background-color: #fff;color: #905b41;}
-		&.btn-img{
+		&.is-plain {background-color: #fff;color: #905b41;}
+		&.btn-img {
 			position: relative;
-			& img{
+			& img {
 				position: absolute;left: 50%;margin-left: -53px;bottom: -25px;
 			}
 		}
@@ -273,21 +278,21 @@ button, input, select {
 				&:nth-of-type(1) {
 					& > a {
 						color: #905b41;
-						& .iconfont{font-size: 25px;}
+						& .iconfont {font-size: 25px;}
 						& > span {font-size: 25px;font-weight: bold;}
 					}
 				}
 				&:nth-of-type(2) {
 					& > a {
 						color: #733719;
-						& .iconfont{font-size: 23px;}
+						& .iconfont {font-size: 23px;}
 						& > span {font-size: 23px;font-weight: bold;}
 					}
 				}
 				&:nth-of-type(3) {
 					& > a {
 						color: #000;
-						& .iconfont{font-size: 20px;}
+						& .iconfont {font-size: 20px;}
 						& > span {font-size: 20px;font-weight: bold;}
 					}
 				}
@@ -296,13 +301,40 @@ button, input, select {
 	}
 }
 
-.aboutTitle{
+.aboutTitle {
 	text-align: center;clear: both;margin: 80px 0;
-	& > span{
+	& > span {
 		background: #905b41;color: #fff;height: 90px;line-height: 90px;font-size: 40px;font-weight: bold;padding: 0 55px;display: inline-block;
 	}
 }
-.aboutHonor{
+.aboutHonor {
 	font-size: 25px;line-height: 50px;
 }
+
+.login {
+	width: 100%;background-image: url(../images/login_02.jpg);background-position: center center;background-repeat: no-repeat;-webkit-background-size: cover;background-size: cover;min-height: 785px;
+	& .loginBox {
+		width: 395px;height: 435px;background-image: url(../images/login_01.png);background-repeat: no-repeat;padding: 15px 37px 0 37px;margin: 17% -15px 0 auto;
+		& .form-group {
+			margin-bottom: 40px;
+			& input {
+				height: 50px;padding: 12px 25px;-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;
+			}
+			& .btn.is-round{letter-spacing: 30px; font-size: 25px;height: 50px;line-height: 1;text-indent: 30px;}
+			&.form-code{
+				position: relative;
+				& input{padding-right: 115px;}
+				& button{
+					position: absolute;right: 20px;top: 7px;z-index: 20;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
 
