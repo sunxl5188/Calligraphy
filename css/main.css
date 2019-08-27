@@ -2466,7 +2466,7 @@ button, input, select {
 .banner02 {
   width: 100%;
   min-height: 500px;
-  background-image: url(../images/about_02.jpg);
+  background-image: url(../images/about_03.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -2739,16 +2739,15 @@ button, input, select {
   .aboutTitle > span {
     background: #905b41;
     color: #fff;
-    height: 90px;
-    line-height: 90px;
-    font-size: 40px;
+    line-height: 65px;
+    font-size: 34px;
     font-weight: bold;
     padding: 0 55px;
     display: inline-block; }
 
 .aboutHonor {
-  font-size: 25px;
-  line-height: 50px; }
+  font-size: 16px;
+  line-height: 40px; }
 
 .login {
   width: 100%;
@@ -2905,19 +2904,19 @@ button, input, select {
           border-radius: 50%; }
 
 .courseTabs {
-  height: 73px;
-  border-top: 3px solid #905b41;
+  height: 60px;
+  border-top: 4px solid #905b41;
   margin: 20px -15px; }
   .courseTabs > a {
     display: inline-block;
     float: left;
     width: 25%;
-    height: 70px;
+    height: 60px;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     color: #fff;
     background: #905b41;
-    line-height: 70px;
+    line-height: 60px;
     border-right: 2px solid #fff; }
     .courseTabs > a:last-of-type {
       border-right: none; }
@@ -2926,31 +2925,31 @@ button, input, select {
       color: #905b41; }
 
 .courseList .recordItem {
-  height: 365px;
+  height: 310px;
   background: #f0f0f0;
   margin: 0 -5px 30px -5px; }
   .courseList .recordItem .recordImg {
-    height: 250px; }
+    height: 215px; }
     .courseList .recordItem .recordImg > a {
-      height: 250px;
+      height: 215px;
       display: block;
       position: relative; }
       .courseList .recordItem .recordImg > a:after {
         content: '\e603';
         font-family: iconfont;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         display: block;
         position: absolute;
         left: 50%;
-        margin-left: -25px;
+        margin-left: -20px;
         top: 50%;
-        margin-top: -25px;
+        margin-top: -20px;
         z-index: 2;
         color: #905b41;
-        font-size: 60px;
+        font-size: 50px;
         background: #fff;
-        line-height: 50px;
+        line-height: 40px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -2961,17 +2960,35 @@ button, input, select {
         left: 0;
         top: 0;
         z-index: 1; }
+  .courseList .recordItem.vip .recordImg a:before {
+    content: '';
+    background: url(../images/006.png) no-repeat 0 0;
+    width: 98px;
+    height: 98px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100; }
+  .courseList .recordItem.hot .recordImg a:before {
+    content: '';
+    background: url(../images/006.png) no-repeat -98px 0;
+    width: 98px;
+    height: 98px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100; }
   .courseList .recordItem .recordInfo {
     padding: 15px; }
     .courseList .recordItem .recordInfo .money {
-      height: 30px;
-      line-height: 30px;
+      height: 26px;
+      line-height: 26px;
       color: #fff;
       display: inline-block;
       padding: 0 15px;
       background: #905b41; }
-      .courseList .recordItem .recordInfo .money .font25 {
-        font-size: 25px; }
 
 .userBox {
   -webkit-border-radius: 25px;
