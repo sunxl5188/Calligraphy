@@ -117,10 +117,14 @@ button, input, select {
       float:right;height:55px;padding:10px 0;
 
       & .btn {
-        height:35px;line-height:35px;-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px;
+        height:35px;line-height:33px;-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px;
         padding-top:0;
-        padding-bottom:0;
+        padding-bottom:0;float:right;margin-left:15px;
+        &.register{
+          background:url(../images/002.png) no-repeat 5px center;padding-left:35px;
+        }
       }
+      & .iconfont{float:right;margin-left:15px;width:35px;height:35px;line-height:35px;font-size:35px;}
     }
   }
 
