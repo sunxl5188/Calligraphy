@@ -23,24 +23,24 @@
         </div>
     </div>
 </div>
-
+<div class="blk45"></div>
 <div class="login">
     <div class="container">
         <div class="loginBox">
             <form action="" method="POST" class="form-horizontal" @submit.prevent="validateBeforeSubmit">
-                <div class="clearfix text-center c717 font22 lh60 pb-15">快速注册  领取新人福利</div>
-                <div class="form-group form-group-lg">
+                <div class="clearfix text-center c717 font16 lh60 pb-15">快速注册  领取新人福利</div>
+                <div class="form-group">
                     <input type="text" class="form-control" name="" placeholder="请输入您的手机号码">
                 </div>
-                <div class="form-group form-group-lg form-code">
+                <div class="form-group form-code">
                     <button type="button" class="btn btn-primary">发送短信</button>
                     <input type="text" class="form-control" name="" placeholder="请输入您的验证码">
                 </div>
 
-                <div class="form-group form-group-lg">
+                <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block is-round">注册</button>
                 </div>
-                <div class="clearfix font20 text-center lh40" style="margin-top:-10px;">
+                <div class="clearfix text-center lh40" style="margin-top:-15px;">
                     <span class="c717">已有注册？</span>
                     <a href="javascript:void(0);" class="c905 fontB">立即登录</a>
                 </div>
@@ -53,7 +53,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $(function () {
-    var docH = $(document).outerHeight(true) - $(".header").outerHeight(true)
+    var docH = $(document).outerHeight(true) - 125
     if (docH > 790) {
       $(".login").height(docH)
     }
